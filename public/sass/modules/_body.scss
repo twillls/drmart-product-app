@@ -1,0 +1,46 @@
+main {
+    background-image: url(/public/images/body-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    #bodyHeader{
+        margin: 50px auto;
+        width: fit-content;
+
+        h2 {
+            background-color: $overlay-black;
+            padding: 10px;
+            color: white;
+            width: fit-content;
+            font-size: 1.7em;
+        }
+
+        h2:first-child {
+            margin-bottom: 10px;
+        }
+    }
+
+    #bodyContent {
+        background-color: $overlay-black;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: auto;
+        margin-right: 50px;
+
+        p {
+            line-height: 1.5;
+            color: white;
+            text-align: right;
+        }
+
+        button {
+            background-color: $marten-yellow;
+            border: none;
+            padding: 10px 25px;
+            align-self: flex-end;
+            margin-top: 10px;
+        }
+    }
+}
