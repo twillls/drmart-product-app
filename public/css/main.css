@@ -1,6 +1,6 @@
 header {
   width: 100%;
-  background-image: url(/public/images/joseph-chan-unsplash-bg.jpg);
+  background-image: url(/images/joseph-chan-unsplash-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -28,7 +28,7 @@ header img {
 }
 
 main {
-  background-image: url(/public/images/body-bg.jpg);
+  background-image: url(/images/body-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
