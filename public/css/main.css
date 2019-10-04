@@ -9,7 +9,6 @@ header {
 }
 header div {
   margin-top: 75px;
-  margin-left: 50px;
   align-self: flex-end;
   padding: 25px;
 }
@@ -27,13 +26,28 @@ header img {
   width: 50%;
 }
 
+@media screen and (min-width: 640px) {
+  header div {
+    padding: 50px;
+  }
+  header div h2 {
+    font-size: 3.3em;
+  }
+}
+@media screen and (min-width: 900px) {
+  header div h2 {
+    font-size: 3.3em;
+  }
+}
 main {
-  background-image: url(/images/body-bg.jpg);
+  background-image: url(/images/drmartspose-crop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 main #bodyHeader {
-  margin: 50px auto;
+  margin: auto;
   width: fit-content;
 }
 main #bodyHeader h2 {
@@ -48,12 +62,13 @@ main #bodyHeader h2:first-child {
 }
 main #bodyContent {
   background-color: rgba(0, 0, 0, 0.8);
-  padding: 50px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 60%;
   margin: auto;
-  margin-right: 50px;
+  margin-right: 25px;
+  margin-top: 25px;
 }
 main #bodyContent p {
   line-height: 1.5;
@@ -68,6 +83,45 @@ main #bodyContent button {
   margin-top: 10px;
 }
 
+@media screen and (min-width: 640px) {
+  main {
+    background-image: url(/images/body-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  main #bodyHeader {
+    margin: 50px auto;
+  }
+  main #bodyContent {
+    width: 40%;
+  }
+  main #bodyContent p {
+    line-height: 1.75;
+    font-size: 1em;
+  }
+  main #bodyContent button {
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 900px) {
+  main #bodyHeader {
+    margin: 25px auto;
+  }
+  main #bodyContent {
+    width: 40%;
+    max-width: 500px;
+    margin-right: 100px;
+  }
+  main #bodyContent p {
+    line-height: 1.75;
+    font-size: 1em;
+  }
+  main #bodyContent button {
+    font-size: 1em;
+  }
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
 }
