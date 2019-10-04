@@ -40,6 +40,7 @@ header img {
   }
 }
 main {
+  width: 100%;
   background-image: url(/images/drmartspose-crop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -74,6 +75,7 @@ main #bodyContent p {
   line-height: 1.5;
   color: white;
   text-align: right;
+  max-width: fit-content;
 }
 main #bodyContent button {
   background-color: #fff200;
@@ -81,6 +83,32 @@ main #bodyContent button {
   padding: 10px 25px;
   align-self: flex-end;
   margin-top: 10px;
+  cursor: pointer;
+}
+main .popUpBox {
+  z-index: 2;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 25px;
+  padding-top: 100px;
+  font-size: 1.1em;
+  line-height: 2;
+}
+main .popUpBox p {
+  padding-right: 25px;
+}
+main .popUpBox button {
+  background-color: #fff200;
+  border: none;
+  padding: 10px 25px;
+  margin: 50px auto;
+  font-size: 1.2em;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 640px) {
