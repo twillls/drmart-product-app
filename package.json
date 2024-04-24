@@ -1,5 +1,5 @@
 {
-  "name": "Dronfield_T_Product-App",
+  "name": "dronfield_t_product-app",
   "version": "1.0.0",
   "description": "Product App served up on Heroku",
   "main": "index.js",
@@ -18,8 +18,7 @@
   },
   "homepage": "https://github.com/tdronfield/Dronfield_T_Product-App#readme",
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2"
+    "gulp": "^4.0.2"
   },
   "dependencies": {
     "express": "^4.17.1"
