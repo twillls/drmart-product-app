@@ -6,9 +6,9 @@ main {
 
     h2 {
         font-size: 3rem;
-        background-color: $darkest-green;
+        background-color: $black;
         padding: 10px;
-        color: $light-green;
+        color: $yellow;
         width: fit-content;
         margin: 3rem 0 0 3rem;
 
@@ -34,8 +34,8 @@ main {
     }
 
     .boot-title {
-        background-color: $dark-green;
-        color: $light-green;
+        background-color: $yellow;
+        color: $black;
         display: block;
         font-size: 1.125rem;
         margin-left: 50%;
@@ -62,22 +62,37 @@ main {
         &:nth-child(2) {
             width: 75px;
             height: 75px;
-            top: 250px;
-            left: 75px;
+            top: 150px;
+            left: 50px;
+
+            @media screen and (min-width: 768px) {
+                top: 250px;
+                left: 75px;
+            }
         }
 
         &:nth-child(3) {
             width: 60px;
             height: 60px;
-            top: 400px;
-            right: 100px;
+            top: 300px;
+            right: 75px;
+
+            @media screen and (min-width: 768px) {
+                top: 400px;
+                right: 100px;
+            }
         }
 
         &:nth-child(4) {
             width: 35px;
             height: 35px;
-            top: 500px;
-            left: 200px;
+            top: 450px;
+            left: 100px;
+
+            @media screen and (min-width: 768px) {
+                top: 500px;
+                left: 200px
+            }
         }
     }
 
@@ -118,7 +133,7 @@ main {
         }
 
         h3 {
-            color: $darkest-green;
+            color: $black;
             font-size: 2rem;
             margin-bottom: 1rem;
 
@@ -140,24 +155,24 @@ main {
     }
 
     .prod-info-details {
-        background-color: $green;
+        background-color: $yellow;
         margin-top: 3rem;
     }
 
-    .prod-info-mats {
-        background-color: $light-green;
-    }
-
     .prod-info-care {
-        background-color: $darkest-green;
+        background-color: $black;
 
         p, h3 {
-            color: $light-green;
+            color: $yellow;
         }
     }
 
     .prod-info-construction {
-        background-color: $green;
+        background-color: $yellow;
+
+        p, h3 {
+            color: $black;
+        }
     }
 }
 
