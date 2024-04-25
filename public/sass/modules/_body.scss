@@ -82,7 +82,34 @@ main {
     }
 
     .prod-info {
+        display: flex;
+        flex-direction: column;
         padding: 3rem 1.5rem;
+
+        @media screen and (min-width: 768px) {
+            align-items: center;
+            flex-direction: row;
+        }
+
+        &:nth-child(even) {
+            text-align: right;
+
+            @media screen and (max-width: 768px) {
+                flex-direction: column-reverse;
+            }
+
+            @media screen and (min-width: 768px) {
+                div {
+                    margin-left: 1.5rem;
+                }
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            &:nth-child(odd) div {
+                margin-right: 1.5rem;
+            }
+        }
 
         p,
         h3 {
@@ -98,6 +125,16 @@ main {
             @media screen and (min-width: 768px) {
                 font-size: 3rem;
                 margin-bottom: 2rem;
+            }
+        }
+
+        svg {
+            width: 25%;
+
+            @media screen and (max-width: 768px) {
+                display: block;
+                margin: 0 auto;
+                margin-top: 1.5rem;
             }
         }
     }
@@ -126,7 +163,7 @@ main {
 
 footer {
     padding: 1.5rem;
-    
+
     p, a {
         font-size: 1rem;
     }
